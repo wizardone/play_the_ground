@@ -1,0 +1,1 @@
+Raterr.store = Hash.new
