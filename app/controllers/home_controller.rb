@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   before_action :rate_limit
 
   def index
-    render plain: "I am Index"
+    render plain: 'Ok'
   end
 
   private
