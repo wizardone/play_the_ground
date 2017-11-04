@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   private
 
   def rate_limit
-    limit = Raterr.enforce(request, period: :hour, max: 10)
+    limit = Raterr.enforce(request, period: :minute, max: 10)
     if limit[:status] == 429
       render plain: limit[:text], status: limit[:status] and return
     end
